@@ -1,0 +1,30 @@
+PODS:
+  - DifferenceKit (0.6.0):
+    - DifferenceKit/Core (= 0.6.0)
+    - DifferenceKit/UIKitExtension (= 0.6.0)
+  - DifferenceKit/Core (0.6.0)
+  - DifferenceKit/UIKitExtension (0.6.0):
+    - DifferenceKit/Core
+  - RxCocoa (4.3.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.0)
+
+DEPENDENCIES:
+  - DifferenceKit
+  - RxCocoa
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DifferenceKit
+    - RxCocoa
+    - RxSwift
+
+SPEC CHECKSUMS:
+  DifferenceKit: 824ab6ecd2a20cc658071b2c0c071114cf91e4c9
+  RxCocoa: 71b9cce833fbcb89a8eec11816dd225830c2bd3c
+  RxSwift: a9717a34df3179fe63563f76e046ad345078dd3a
+
+PODFILE CHECKSUM: 3d7b09d7877be254f7bef2fe3ee1692998ce319b
+
+COCOAPODS: 1.5.3

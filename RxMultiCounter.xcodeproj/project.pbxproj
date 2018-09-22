@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A0CBB4215567D900691097 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A0CBB3215567D900691097 /* Store.swift */; };
+		41A51D4F2683A294749E97F9 /* Pods_RxMultiCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0B2A57E5E5FF4B14D23A4E /* Pods_RxMultiCounter.framework */; };
+		7207A1A0215115D400971B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207A19F215115D400971B5E /* AppDelegate.swift */; };
+		7207A1A5215115D500971B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7207A1A3215115D500971B5E /* Main.storyboard */; };
+		7207A1A7215115EC00971B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7207A1A6215115EC00971B5E /* Assets.xcassets */; };
+		7207A1AA215115EC00971B5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7207A1A8215115EC00971B5E /* LaunchScreen.storyboard */; };
+		7207A1B42151188800971B5E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207A1B32151188800971B5E /* DetailViewController.swift */; };
+		7207A1B6215118C400971B5E /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207A1B5215118C400971B5E /* MasterTableViewController.swift */; };
+		722CEFA121526FA80060AD1D /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CEFA021526FA80060AD1D /* MasterTableViewCell.swift */; };
+		7244C8152153B3910088D087 /* RxSimpleAnimatableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7244C8142153B3910088D087 /* RxSimpleAnimatableDataSource.swift */; };
+		72FBE43F2151D54D005216AF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE43E2151D54D005216AF /* Coordinator.swift */; };
+		72FBE4412151DB52005216AF /* DetailViewActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE4402151DB52005216AF /* DetailViewActions.swift */; };
+		72FBE4482151E0F6005216AF /* MultiCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE4472151E0F6005216AF /* MultiCounter.swift */; };
+		72FBE44A2151E186005216AF /* UnwrapOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE4492151E186005216AF /* UnwrapOptional.swift */; };
+		72FBE44F2151E611005216AF /* MasterViewActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE44E2151E611005216AF /* MasterViewActions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09A0CBB3215567D900691097 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		1EFE1B9E2326BE02F316925A /* Pods-RxMultiCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMultiCounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter.release.xcconfig"; sourceTree = "<group>"; };
+		7207A19C215115D300971B5E /* RxMultiCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMultiCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7207A19F215115D400971B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7207A1A4215115D500971B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7207A1A6215115EC00971B5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7207A1A9215115EC00971B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7207A1AB215115EC00971B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7207A1B32151188800971B5E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7207A1B5215118C400971B5E /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		722CEFA021526FA80060AD1D /* MasterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
+		7244C8142153B3910088D087 /* RxSimpleAnimatableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSimpleAnimatableDataSource.swift; sourceTree = "<group>"; };
+		72FBE43E2151D54D005216AF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		72FBE4402151DB52005216AF /* DetailViewActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewActions.swift; sourceTree = "<group>"; };
+		72FBE4472151E0F6005216AF /* MultiCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCounter.swift; sourceTree = "<group>"; };
+		72FBE4492151E186005216AF /* UnwrapOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnwrapOptional.swift; sourceTree = "<group>"; };
+		72FBE44E2151E611005216AF /* MasterViewActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewActions.swift; sourceTree = "<group>"; };
+		7F0B2A57E5E5FF4B14D23A4E /* Pods_RxMultiCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMultiCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B115ECAA0B49024C70CAB073 /* Pods-RxMultiCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMultiCounter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7207A199215115D300971B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A51D4F2683A294749E97F9 /* Pods_RxMultiCounter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7207A193215115D100971B5E = {
+			isa = PBXGroup;
+			children = (
+				7207A19E215115D300971B5E /* RxMultiCounter */,
+				7207A19D215115D300971B5E /* Products */,
+				9AF377425C6D62F1D89AC16D /* Pods */,
+				9FB147F9CF8C5B034686C36B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7207A19D215115D300971B5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7207A19C215115D300971B5E /* RxMultiCounter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7207A19E215115D300971B5E /* RxMultiCounter */ = {
+			isa = PBXGroup;
+			children = (
+				72FBE4422151DD41005216AF /* RxExtensions */,
+				72FBE4462151E0E5005216AF /* Model */,
+				7207A19F215115D400971B5E /* AppDelegate.swift */,
+				72FBE43E2151D54D005216AF /* Coordinator.swift */,
+				72FBE44D2151E5FE005216AF /* Master */,
+				72FBE4452151DFD5005216AF /* Detail Screen */,
+				7207A1A3215115D500971B5E /* Main.storyboard */,
+				7207A1A6215115EC00971B5E /* Assets.xcassets */,
+				7207A1A8215115EC00971B5E /* LaunchScreen.storyboard */,
+				7207A1AB215115EC00971B5E /* Info.plist */,
+			);
+			path = RxMultiCounter;
+			sourceTree = "<group>";
+		};
+		72FBE4422151DD41005216AF /* RxExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				72FBE4492151E186005216AF /* UnwrapOptional.swift */,
+				7244C8142153B3910088D087 /* RxSimpleAnimatableDataSource.swift */,
+				09A0CBB3215567D900691097 /* Store.swift */,
+			);
+			path = RxExtensions;
+			sourceTree = "<group>";
+		};
+		72FBE4452151DFD5005216AF /* Detail Screen */ = {
+			isa = PBXGroup;
+			children = (
+				7207A1B32151188800971B5E /* DetailViewController.swift */,
+				72FBE4402151DB52005216AF /* DetailViewActions.swift */,
+			);
+			path = "Detail Screen";
+			sourceTree = "<group>";
+		};
+		72FBE4462151E0E5005216AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72FBE4472151E0F6005216AF /* MultiCounter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72FBE44D2151E5FE005216AF /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				7207A1B5215118C400971B5E /* MasterTableViewController.swift */,
+				722CEFA021526FA80060AD1D /* MasterTableViewCell.swift */,
+				72FBE44E2151E611005216AF /* MasterViewActions.swift */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		9AF377425C6D62F1D89AC16D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B115ECAA0B49024C70CAB073 /* Pods-RxMultiCounter.debug.xcconfig */,
+				1EFE1B9E2326BE02F316925A /* Pods-RxMultiCounter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9FB147F9CF8C5B034686C36B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F0B2A57E5E5FF4B14D23A4E /* Pods_RxMultiCounter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7207A19B215115D300971B5E /* RxMultiCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7207A1AE215115EC00971B5E /* Build configuration list for PBXNativeTarget "RxMultiCounter" */;
+			buildPhases = (
+				39DF4A341EFFB5A9BBE8A7FF /* [CP] Check Pods Manifest.lock */,
+				7207A198215115D300971B5E /* Sources */,
+				7207A199215115D300971B5E /* Frameworks */,
+				7207A19A215115D300971B5E /* Resources */,
+				747B189D54049089D33FF245 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxMultiCounter;
+			productName = RxMultiCounter;
+			productReference = 7207A19C215115D300971B5E /* RxMultiCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7207A194215115D100971B5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Daniel Tartaglia";
+				TargetAttributes = {
+					7207A19B215115D300971B5E = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 7207A197215115D100971B5E /* Build configuration list for PBXProject "RxMultiCounter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7207A193215115D100971B5E;
+			productRefGroup = 7207A19D215115D300971B5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7207A19B215115D300971B5E /* RxMultiCounter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7207A19A215115D300971B5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7207A1AA215115EC00971B5E /* LaunchScreen.storyboard in Resources */,
+				7207A1A7215115EC00971B5E /* Assets.xcassets in Resources */,
+				7207A1A5215115D500971B5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39DF4A341EFFB5A9BBE8A7FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxMultiCounter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		747B189D54049089D33FF245 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7207A198215115D300971B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FBE44F2151E611005216AF /* MasterViewActions.swift in Sources */,
+				72FBE43F2151D54D005216AF /* Coordinator.swift in Sources */,
+				7207A1B42151188800971B5E /* DetailViewController.swift in Sources */,
+				09A0CBB4215567D900691097 /* Store.swift in Sources */,
+				72FBE44A2151E186005216AF /* UnwrapOptional.swift in Sources */,
+				7207A1B6215118C400971B5E /* MasterTableViewController.swift in Sources */,
+				7244C8152153B3910088D087 /* RxSimpleAnimatableDataSource.swift in Sources */,
+				72FBE4412151DB52005216AF /* DetailViewActions.swift in Sources */,
+				7207A1A0215115D400971B5E /* AppDelegate.swift in Sources */,
+				722CEFA121526FA80060AD1D /* MasterTableViewCell.swift in Sources */,
+				72FBE4482151E0F6005216AF /* MultiCounter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7207A1A3215115D500971B5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7207A1A4215115D500971B5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7207A1A8215115EC00971B5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7207A1A9215115EC00971B5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7207A1AC215115EC00971B5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7207A1AD215115EC00971B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7207A1AF215115EC00971B5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B115ECAA0B49024C70CAB073 /* Pods-RxMultiCounter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XA4HQLH76F;
+				INFOPLIST_FILE = RxMultiCounter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.danielt1263.RxMultiCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7207A1B0215115EC00971B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EFE1B9E2326BE02F316925A /* Pods-RxMultiCounter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XA4HQLH76F;
+				INFOPLIST_FILE = RxMultiCounter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.danielt1263.RxMultiCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7207A197215115D100971B5E /* Build configuration list for PBXProject "RxMultiCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7207A1AC215115EC00971B5E /* Debug */,
+				7207A1AD215115EC00971B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7207A1AE215115EC00971B5E /* Build configuration list for PBXNativeTarget "RxMultiCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7207A1AF215115EC00971B5E /* Debug */,
+				7207A1B0215115EC00971B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7207A194215115D100971B5E /* Project object */;
+}
