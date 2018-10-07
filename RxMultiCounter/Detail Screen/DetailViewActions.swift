@@ -10,14 +10,12 @@ import Foundation
 import RxSwift
 
 extension ObservableType where E == Void {
-	func incrementSelected(state: Observable<State>) -> Observable<Action> {
-		return withLatestFrom(state.lastSelectedID())
-			.map { Action.increment($0) }
+	func incrementSelected() -> Observable<Action> {
+		return map { Action.incrementSelected }
 	}
 
-	func decrementSelected(state: Observable<State>) -> Observable<Action> {
-		return withLatestFrom(state.lastSelectedID())
-			.map { Action.decrement($0) }
+	func decrementSelected() -> Observable<Action> {
+		return map { Action.decrementSelected }
 	}
 }
 

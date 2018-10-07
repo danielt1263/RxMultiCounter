@@ -28,12 +28,12 @@ class DetailViewController: UIViewController {
 			.disposed(by: bag)
 
 		incrementButton.rx.tap
-			.incrementSelected(state: store.state)
+			.incrementSelected()
 			.bind(to: store)
 			.disposed(by: bag)
 
 		decrementButton.rx.tap
-			.decrementSelected(state: store.state)
+			.decrementSelected()
 			.bind(to: store)
 			.disposed(by: bag)
 

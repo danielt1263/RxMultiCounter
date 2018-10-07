@@ -15,6 +15,8 @@ enum Action {
 	case remove(UUID)
 	case increment(UUID)
 	case decrement(UUID)
+	case incrementSelected
+	case decrementSelected
 	case select(UUID?)
 }
 
@@ -41,6 +43,14 @@ func update(state: State, action: Action) -> State {
 		guard let value = state.counters[id] else { break }
 		result.counters[id] = value + 1
 	case let .decrement(id):
+		guard let value = state.counters[id] else { break }
+		result.counters[id] = value - 1
+	case .incrementSelected:
+		guard let id = state.selected else { break }
+		guard let value = state.counters[id] else { break }
+		result.counters[id] = value + 1
+	case .decrementSelected:
+		guard let id = state.selected else { break }
 		guard let value = state.counters[id] else { break }
 		result.counters[id] = value - 1
 	case let .select(id):
