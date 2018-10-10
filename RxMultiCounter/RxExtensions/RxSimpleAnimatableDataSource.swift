@@ -14,8 +14,9 @@ import DifferenceKit
 class RxSimpleAnimatableDataSource<E: Differentiable, Cell: UITableViewCell>: NSObject, RxTableViewDataSourceType, UITableViewDataSource {
 	typealias Element = [E]
 
-	init(identifier: String, configure: @escaping (Int, E, Cell) -> Void) {
-		cellIdentifier = identifier
+	init(identifier: String, with animation: UITableView.RowAnimation = .automatic, configure: @escaping (Int, E, Cell) -> Void) {
+		self.identifier = identifier
+		self.animation = animation
 		self.configure = configure
 	}
 
@@ -23,7 +24,7 @@ class RxSimpleAnimatableDataSource<E: Differentiable, Cell: UITableViewCell>: NS
 		let source = values
 		let target = observedEvent.element ?? []
 		let changeset = StagedChangeset(source: source, target: target)
-		tableView.reload(using: changeset, with: .automatic) { data in
+		tableView.reload(using: changeset, with: animation) { data in
 			self.values = data
 		}
 	}
@@ -33,13 +34,14 @@ class RxSimpleAnimatableDataSource<E: Differentiable, Cell: UITableViewCell>: NS
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! Cell
+		let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! Cell
 		let row = indexPath.row
 		configure(row, values[row], cell)
 		return cell
 	}
 
-	let cellIdentifier: String
+	let identifier: String
+	let animation: UITableView.RowAnimation
 	let configure: (Int, E, Cell) -> Void
 	var values: Element = []
 }
