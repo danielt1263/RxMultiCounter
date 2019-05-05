@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-extension ObservableType where E == Void {
+extension ObservableType where Element == Void {
 	func incrementSelected() -> Observable<Action> {
 		return map { Action.incrementSelected }
 	}
@@ -19,7 +19,7 @@ extension ObservableType where E == Void {
 	}
 }
 
-extension ObservableType where E == [Any] {
+extension ObservableType where Element == [Any] {
 	func selectNil() -> Observable<Action> {
 		return map { _ in Action.select(nil) }
 	}

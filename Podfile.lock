@@ -1,13 +1,16 @@
 PODS:
-  - DifferenceKit (0.6.0):
-    - DifferenceKit/Core (= 0.6.0)
-    - DifferenceKit/UIKitExtension (= 0.6.0)
-  - DifferenceKit/Core (0.6.0)
-  - DifferenceKit/UIKitExtension (0.6.0):
+  - DifferenceKit (1.1.1):
+    - DifferenceKit/Core (= 1.1.1)
+    - DifferenceKit/UIKitExtension (= 1.1.1)
+  - DifferenceKit/Core (1.1.1)
+  - DifferenceKit/UIKitExtension (1.1.1):
     - DifferenceKit/Core
-  - RxCocoa (4.3.0):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.3.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
 
 DEPENDENCIES:
   - DifferenceKit
@@ -18,12 +21,14 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - DifferenceKit
     - RxCocoa
+    - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
-  DifferenceKit: 824ab6ecd2a20cc658071b2c0c071114cf91e4c9
-  RxCocoa: 71b9cce833fbcb89a8eec11816dd225830c2bd3c
-  RxSwift: a9717a34df3179fe63563f76e046ad345078dd3a
+  DifferenceKit: cf1b84e2207ea45c3640381cb229cf46c1647466
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
 PODFILE CHECKSUM: 3d7b09d7877be254f7bef2fe3ee1692998ce319b
 

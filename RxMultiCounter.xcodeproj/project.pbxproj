@@ -20,7 +20,6 @@
 		72FBE43F2151D54D005216AF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE43E2151D54D005216AF /* Coordinator.swift */; };
 		72FBE4412151DB52005216AF /* DetailViewActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE4402151DB52005216AF /* DetailViewActions.swift */; };
 		72FBE4482151E0F6005216AF /* MultiCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE4472151E0F6005216AF /* MultiCounter.swift */; };
-		72FBE44A2151E186005216AF /* UnwrapOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE4492151E186005216AF /* UnwrapOptional.swift */; };
 		72FBE44F2151E611005216AF /* MasterViewActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE44E2151E611005216AF /* MasterViewActions.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		72FBE43E2151D54D005216AF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		72FBE4402151DB52005216AF /* DetailViewActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewActions.swift; sourceTree = "<group>"; };
 		72FBE4472151E0F6005216AF /* MultiCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCounter.swift; sourceTree = "<group>"; };
-		72FBE4492151E186005216AF /* UnwrapOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnwrapOptional.swift; sourceTree = "<group>"; };
 		72FBE44E2151E611005216AF /* MasterViewActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewActions.swift; sourceTree = "<group>"; };
 		7F0B2A57E5E5FF4B14D23A4E /* Pods_RxMultiCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMultiCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B115ECAA0B49024C70CAB073 /* Pods-RxMultiCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMultiCounter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 		72FBE4422151DD41005216AF /* RxExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				72FBE4492151E186005216AF /* UnwrapOptional.swift */,
 				7244C8142153B3910088D087 /* RxSimpleAnimatableDataSource.swift */,
 				09A0CBB3215567D900691097 /* Store.swift */,
 			);
@@ -181,7 +178,7 @@
 				TargetAttributes = {
 					7207A19B215115D300971B5E = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -244,12 +241,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +267,6 @@
 				72FBE43F2151D54D005216AF /* Coordinator.swift in Sources */,
 				7207A1B42151188800971B5E /* DetailViewController.swift in Sources */,
 				09A0CBB4215567D900691097 /* Store.swift in Sources */,
-				72FBE44A2151E186005216AF /* UnwrapOptional.swift in Sources */,
 				7207A1B6215118C400971B5E /* MasterTableViewController.swift in Sources */,
 				7244C8152153B3910088D087 /* RxSimpleAnimatableDataSource.swift in Sources */,
 				72FBE4412151DB52005216AF /* DetailViewActions.swift in Sources */,
@@ -419,8 +417,8 @@
 			baseConfigurationReference = B115ECAA0B49024C70CAB073 /* Pods-RxMultiCounter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XA4HQLH76F;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RxMultiCounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -428,7 +426,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.danielt1263.RxMultiCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -438,8 +437,8 @@
 			baseConfigurationReference = 1EFE1B9E2326BE02F316925A /* Pods-RxMultiCounter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XA4HQLH76F;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RxMultiCounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,7 +446,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.danielt1263.RxMultiCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

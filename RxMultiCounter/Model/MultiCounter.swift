@@ -59,7 +59,7 @@ func update(state: State, action: Action) -> State {
 	return result
 }
 
-extension ObservableType where E == State {
+extension ObservableType where Element == State {
 	func deselect() -> Observable<Void> {
 		return filter { $0.selected == nil }
 			.map { _ in }
@@ -81,13 +81,13 @@ extension ObservableType where E == State {
 	func showDetail() -> Observable<Void> {
 		return map { $0.selected }
 			.distinctUntilChanged()
-			.unwrapOptional()
+			.compactMap { $0 }
 			.map { _ in }
 	}
 
 	func lastSelectedID() -> Observable<UUID> {
 		return map { $0.selected }
-			.unwrapOptional()
+			.compactMap { $0 }
 	}
 }
 

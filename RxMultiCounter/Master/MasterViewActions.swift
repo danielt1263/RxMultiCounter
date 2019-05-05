@@ -9,13 +9,13 @@
 import Foundation
 import RxSwift
 
-extension ObservableType where E == Void {
+extension ObservableType where Element == Void {
 	func add() -> Observable<Action> {
 		return map { Action.add }
 	}
 }
 
-extension ObservableType where E == IndexPath {
+extension ObservableType where Element == IndexPath {
 	func select(state: Observable<State>) -> Observable<Action> {
 		return withLatestFrom(state.map { $0.order }) { $1[$0.row] }
 			.map { Action.select($0) }
