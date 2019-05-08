@@ -23,12 +23,13 @@ class Store<State, Action> {
 	private let actions = PublishSubject<Action>()
 }
 
-
 extension Store: ObserverType {
 
 	typealias E = Action
 
 	func on(_ event: Event<E>) {
-		actions.on(event)
+		if let element = event.element {
+			actions.onNext(element)
+		}
 	}
 }
