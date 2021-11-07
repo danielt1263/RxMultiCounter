@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xvs-8C-1Uq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="vtU-qe-ygM">
+            <objects>
+                <tableViewController title="Master" id="Xvs-8C-1Uq" customClass="MasterViewController" customModule="RxMultiCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ZVL-6R-25G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Lz2-WI-lLt" customClass="MasterTableViewCell" customModule="RxMultiCounter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="44.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lz2-WI-lLt" id="fCW-yn-R4X">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYe-To-SWs">
+                                            <rect key="frame" x="20" y="11.5" width="278" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4F-p8-2nc">
+                                            <rect key="frame" x="306" y="0.5" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="4bU-nl-ceD"/>
+                                                <constraint firstAttribute="width" constant="44" id="GJZ-yS-9uz"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <state key="normal" title="+"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTX-0u-hDT">
+                                            <rect key="frame" x="350" y="0.5" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="0Jw-as-U61"/>
+                                                <constraint firstAttribute="width" constant="44" id="PWE-Le-eyc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <state key="normal" title="-"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="GTX-0u-hDT" firstAttribute="leading" secondItem="h4F-p8-2nc" secondAttribute="trailing" id="3Sm-eX-eSZ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="GTX-0u-hDT" secondAttribute="trailing" id="5bi-R0-2CN"/>
+                                        <constraint firstItem="eYe-To-SWs" firstAttribute="leading" secondItem="fCW-yn-R4X" secondAttribute="leadingMargin" id="6YL-0I-1OL"/>
+                                        <constraint firstItem="h4F-p8-2nc" firstAttribute="leading" secondItem="eYe-To-SWs" secondAttribute="trailing" constant="8" id="D56-e2-7Ro"/>
+                                        <constraint firstItem="h4F-p8-2nc" firstAttribute="centerY" secondItem="fCW-yn-R4X" secondAttribute="centerY" id="X2d-Le-WeY"/>
+                                        <constraint firstItem="GTX-0u-hDT" firstAttribute="centerY" secondItem="fCW-yn-R4X" secondAttribute="centerY" id="XNA-4K-Ujb"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="eYe-To-SWs" secondAttribute="bottom" priority="750" constant="0.5" id="ag8-cL-gdq"/>
+                                        <constraint firstItem="eYe-To-SWs" firstAttribute="top" secondItem="fCW-yn-R4X" secondAttribute="topMargin" priority="750" constant="0.5" id="zhT-jQ-cTk"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="countLabel" destination="eYe-To-SWs" id="UtU-qR-TIq"/>
+                                    <outlet property="decrementButton" destination="GTX-0u-hDT" id="aWF-ve-cVO"/>
+                                    <outlet property="incrementButton" destination="h4F-p8-2nc" id="bNT-tZ-Bwr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Xvs-8C-1Uq" id="EFd-IE-e5C"/>
+                            <outlet property="delegate" destination="Xvs-8C-1Uq" id="bKh-Cy-DQm"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ow5-IS-on9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-171" y="96"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

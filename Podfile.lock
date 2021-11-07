@@ -1,35 +1,60 @@
 PODS:
-  - DifferenceKit (1.1.1):
-    - DifferenceKit/Core (= 1.1.1)
-    - DifferenceKit/UIKitExtension (= 1.1.1)
-  - DifferenceKit/Core (1.1.1)
-  - DifferenceKit/UIKitExtension (1.1.1):
-    - DifferenceKit/Core
-  - RxCocoa (5.0.0):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.0.0):
-    - RxSwift (~> 5)
-  - RxSwift (5.0.0)
+  - Cause-Logic-Effect (3.2.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - Curry (5.0.0)
+  - Differentiator (5.0.0)
+  - EnumKit (1.1.3)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxEnumKit (2.0.0):
+    - EnumKit (~> 1.1)
+    - RxCocoa (~> 6.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - RxTest (6.2.0):
+    - RxSwift (= 6.2.0)
 
 DEPENDENCIES:
-  - DifferenceKit
+  - Cause-Logic-Effect
+  - Curry
   - RxCocoa
+  - RxDataSources
+  - RxEnumKit
   - RxSwift
+  - RxTest
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - DifferenceKit
+  trunk:
+    - Cause-Logic-Effect
+    - Curry
+    - Differentiator
+    - EnumKit
     - RxCocoa
+    - RxDataSources
+    - RxEnumKit
     - RxRelay
     - RxSwift
+    - RxTest
 
 SPEC CHECKSUMS:
-  DifferenceKit: cf1b84e2207ea45c3640381cb229cf46c1647466
-  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
-  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
-  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  Cause-Logic-Effect: 31f6f9f878dbe10b6cc5969e7e1712c376ce5c95
+  Curry: 9807b3a3e5056d73c38c7eeb3cf846cd88cd3d2a
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  EnumKit: 9f25cf60cb53b029a2c396813f155877d9764a8f
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxEnumKit: b09f20969ee95beffdc14dfd355dd7118df6b787
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  RxTest: 0c692fa672b694373ba86d2b00033595297a2831
 
-PODFILE CHECKSUM: 3d7b09d7877be254f7bef2fe3ee1692998ce319b
+PODFILE CHECKSUM: 1321c3a55602a34e7ecda5aa447b7dd7fbbc5dfe
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.11.2

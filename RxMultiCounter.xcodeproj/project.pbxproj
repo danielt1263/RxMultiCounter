@@ -3,143 +3,189 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09A0CBB4215567D900691097 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A0CBB3215567D900691097 /* Store.swift */; };
-		41A51D4F2683A294749E97F9 /* Pods_RxMultiCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0B2A57E5E5FF4B14D23A4E /* Pods_RxMultiCounter.framework */; };
-		7207A1A0215115D400971B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207A19F215115D400971B5E /* AppDelegate.swift */; };
-		7207A1A5215115D500971B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7207A1A3215115D500971B5E /* Main.storyboard */; };
-		7207A1A7215115EC00971B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7207A1A6215115EC00971B5E /* Assets.xcassets */; };
-		7207A1AA215115EC00971B5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7207A1A8215115EC00971B5E /* LaunchScreen.storyboard */; };
-		7207A1B42151188800971B5E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207A1B32151188800971B5E /* DetailViewController.swift */; };
-		7207A1B6215118C400971B5E /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207A1B5215118C400971B5E /* MasterTableViewController.swift */; };
-		722CEFA121526FA80060AD1D /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CEFA021526FA80060AD1D /* MasterTableViewCell.swift */; };
-		7244C8152153B3910088D087 /* RxSimpleAnimatableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7244C8142153B3910088D087 /* RxSimpleAnimatableDataSource.swift */; };
-		72FBE43F2151D54D005216AF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE43E2151D54D005216AF /* Coordinator.swift */; };
-		72FBE4412151DB52005216AF /* DetailViewActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE4402151DB52005216AF /* DetailViewActions.swift */; };
-		72FBE4482151E0F6005216AF /* MultiCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE4472151E0F6005216AF /* MultiCounter.swift */; };
-		72FBE44F2151E611005216AF /* MasterViewActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBE44E2151E611005216AF /* MasterViewActions.swift */; };
+		711EED752736F7F100F32157 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EED742736F7F100F32157 /* AppDelegate.swift */; };
+		711EED7E2736F7F200F32157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711EED7D2736F7F200F32157 /* Assets.xcassets */; };
+		711EED812736F7F200F32157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711EED7F2736F7F200F32157 /* LaunchScreen.storyboard */; };
+		711EED8C2736F7F200F32157 /* RxMultiCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EED8B2736F7F200F32157 /* RxMultiCounterTests.swift */; };
+		711EEDAA2736FA1C00F32157 /* MasterLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EEDA62736FA1C00F32157 /* MasterLogic.swift */; };
+		711EEDAB2736FA1C00F32157 /* MasterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711EEDA72736FA1C00F32157 /* MasterViewController.storyboard */; };
+		711EEDAC2736FA1C00F32157 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EEDA82736FA1C00F32157 /* MasterViewController.swift */; };
+		711EEDAD2736FA1C00F32157 /* MasterConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EEDA92736FA1C00F32157 /* MasterConnections.swift */; };
+		711EEDAF273703DA00F32157 /* Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EEDAE273703DA00F32157 /* Split.swift */; };
+		711EEDB42737071400F32157 /* UISplitViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EEDB32737071400F32157 /* UISplitViewController+Rx.swift */; };
+		71E22BCF273831AF00A90FFD /* CounterDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E22BCE273831AF00A90FFD /* CounterDisplay.swift */; };
+		71E384BC273736200055B227 /* DetailLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E384B8273736200055B227 /* DetailLogic.swift */; };
+		71E384BD273736200055B227 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E384B9273736200055B227 /* DetailViewController.swift */; };
+		71E384BE273736200055B227 /* DetailConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E384BA273736200055B227 /* DetailConnections.swift */; };
+		7A8C845E8154A925207F4F7F /* Pods_RxMultiCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B2033E4856C56FC5B15155 /* Pods_RxMultiCounterTests.framework */; };
+		7F0179CC7D064AC8D5F4DD0F /* Pods_RxMultiCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C56FDECA62540785840B42 /* Pods_RxMultiCounter.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		711EED882736F7F200F32157 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 711EED692736F7F100F32157 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 711EED702736F7F100F32157;
+			remoteInfo = RxMultiCounter;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		09A0CBB3215567D900691097 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		1EFE1B9E2326BE02F316925A /* Pods-RxMultiCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMultiCounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter.release.xcconfig"; sourceTree = "<group>"; };
-		7207A19C215115D300971B5E /* RxMultiCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMultiCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7207A19F215115D400971B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7207A1A4215115D500971B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7207A1A6215115EC00971B5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7207A1A9215115EC00971B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7207A1AB215115EC00971B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7207A1B32151188800971B5E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		7207A1B5215118C400971B5E /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
-		722CEFA021526FA80060AD1D /* MasterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
-		7244C8142153B3910088D087 /* RxSimpleAnimatableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSimpleAnimatableDataSource.swift; sourceTree = "<group>"; };
-		72FBE43E2151D54D005216AF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		72FBE4402151DB52005216AF /* DetailViewActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewActions.swift; sourceTree = "<group>"; };
-		72FBE4472151E0F6005216AF /* MultiCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCounter.swift; sourceTree = "<group>"; };
-		72FBE44E2151E611005216AF /* MasterViewActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewActions.swift; sourceTree = "<group>"; };
-		7F0B2A57E5E5FF4B14D23A4E /* Pods_RxMultiCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMultiCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B115ECAA0B49024C70CAB073 /* Pods-RxMultiCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMultiCounter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter.debug.xcconfig"; sourceTree = "<group>"; };
+		33C56FDECA62540785840B42 /* Pods_RxMultiCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMultiCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4622861B6367872DFB1D0C22 /* Pods-RxMultiCounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMultiCounterTests.release.xcconfig"; path = "Target Support Files/Pods-RxMultiCounterTests/Pods-RxMultiCounterTests.release.xcconfig"; sourceTree = "<group>"; };
+		58B2033E4856C56FC5B15155 /* Pods_RxMultiCounterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMultiCounterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		711EED712736F7F100F32157 /* RxMultiCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMultiCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		711EED742736F7F100F32157 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		711EED7D2736F7F200F32157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		711EED802736F7F200F32157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		711EED822736F7F200F32157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		711EED872736F7F200F32157 /* RxMultiCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxMultiCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		711EED8B2736F7F200F32157 /* RxMultiCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMultiCounterTests.swift; sourceTree = "<group>"; };
+		711EEDA62736FA1C00F32157 /* MasterLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterLogic.swift; sourceTree = "<group>"; };
+		711EEDA72736FA1C00F32157 /* MasterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MasterViewController.storyboard; sourceTree = "<group>"; };
+		711EEDA82736FA1C00F32157 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		711EEDA92736FA1C00F32157 /* MasterConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterConnections.swift; sourceTree = "<group>"; };
+		711EEDAE273703DA00F32157 /* Split.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Split.swift; sourceTree = "<group>"; };
+		711EEDB32737071400F32157 /* UISplitViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Rx.swift"; sourceTree = "<group>"; };
+		71E22BCE273831AF00A90FFD /* CounterDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDisplay.swift; sourceTree = "<group>"; };
+		71E384B8273736200055B227 /* DetailLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLogic.swift; sourceTree = "<group>"; };
+		71E384B9273736200055B227 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		71E384BA273736200055B227 /* DetailConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConnections.swift; sourceTree = "<group>"; };
+		D1F2AD9EFAF611C93DBBFD7C /* Pods-RxMultiCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMultiCounter.debug.xcconfig"; path = "Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter.debug.xcconfig"; sourceTree = "<group>"; };
+		F926B3AB7E182D43BC44744B /* Pods-RxMultiCounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMultiCounterTests.debug.xcconfig"; path = "Target Support Files/Pods-RxMultiCounterTests/Pods-RxMultiCounterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE69984960AD0D76B7F675D2 /* Pods-RxMultiCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMultiCounter.release.xcconfig"; path = "Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7207A199215115D300971B5E /* Frameworks */ = {
+		711EED6E2736F7F100F32157 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A51D4F2683A294749E97F9 /* Pods_RxMultiCounter.framework in Frameworks */,
+				7F0179CC7D064AC8D5F4DD0F /* Pods_RxMultiCounter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711EED842736F7F200F32157 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A8C845E8154A925207F4F7F /* Pods_RxMultiCounterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7207A193215115D100971B5E = {
+		4BAE9D84B7A0BBFE3EEE7F97 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7207A19E215115D300971B5E /* RxMultiCounter */,
-				7207A19D215115D300971B5E /* Products */,
-				9AF377425C6D62F1D89AC16D /* Pods */,
-				9FB147F9CF8C5B034686C36B /* Frameworks */,
+				D1F2AD9EFAF611C93DBBFD7C /* Pods-RxMultiCounter.debug.xcconfig */,
+				FE69984960AD0D76B7F675D2 /* Pods-RxMultiCounter.release.xcconfig */,
+				F926B3AB7E182D43BC44744B /* Pods-RxMultiCounterTests.debug.xcconfig */,
+				4622861B6367872DFB1D0C22 /* Pods-RxMultiCounterTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		711EED682736F7F100F32157 = {
+			isa = PBXGroup;
+			children = (
+				711EED732736F7F100F32157 /* RxMultiCounter */,
+				711EED8A2736F7F200F32157 /* RxMultiCounterTests */,
+				711EED722736F7F100F32157 /* Products */,
+				4BAE9D84B7A0BBFE3EEE7F97 /* Pods */,
+				BC790056B2D69A3EFC484CFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		7207A19D215115D300971B5E /* Products */ = {
+		711EED722736F7F100F32157 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7207A19C215115D300971B5E /* RxMultiCounter.app */,
+				711EED712736F7F100F32157 /* RxMultiCounter.app */,
+				711EED872736F7F200F32157 /* RxMultiCounterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7207A19E215115D300971B5E /* RxMultiCounter */ = {
+		711EED732736F7F100F32157 /* RxMultiCounter */ = {
 			isa = PBXGroup;
 			children = (
-				72FBE4422151DD41005216AF /* RxExtensions */,
-				72FBE4462151E0E5005216AF /* Model */,
-				7207A19F215115D400971B5E /* AppDelegate.swift */,
-				72FBE43E2151D54D005216AF /* Coordinator.swift */,
-				72FBE44D2151E5FE005216AF /* Master */,
-				72FBE4452151DFD5005216AF /* Detail Screen */,
-				7207A1A3215115D500971B5E /* Main.storyboard */,
-				7207A1A6215115EC00971B5E /* Assets.xcassets */,
-				7207A1A8215115EC00971B5E /* LaunchScreen.storyboard */,
-				7207A1AB215115EC00971B5E /* Info.plist */,
+				711EED742736F7F100F32157 /* AppDelegate.swift */,
+				711EEDA42736F93A00F32157 /* Scenes */,
+				711EEDB2273706F200F32157 /* Utilities */,
+				711EED7D2736F7F200F32157 /* Assets.xcassets */,
+				711EED7F2736F7F200F32157 /* LaunchScreen.storyboard */,
+				711EED822736F7F200F32157 /* Info.plist */,
 			);
 			path = RxMultiCounter;
 			sourceTree = "<group>";
 		};
-		72FBE4422151DD41005216AF /* RxExtensions */ = {
+		711EED8A2736F7F200F32157 /* RxMultiCounterTests */ = {
 			isa = PBXGroup;
 			children = (
-				7244C8142153B3910088D087 /* RxSimpleAnimatableDataSource.swift */,
-				09A0CBB3215567D900691097 /* Store.swift */,
+				711EED8B2736F7F200F32157 /* RxMultiCounterTests.swift */,
 			);
-			path = RxExtensions;
+			path = RxMultiCounterTests;
 			sourceTree = "<group>";
 		};
-		72FBE4452151DFD5005216AF /* Detail Screen */ = {
+		711EEDA42736F93A00F32157 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				7207A1B32151188800971B5E /* DetailViewController.swift */,
-				72FBE4402151DB52005216AF /* DetailViewActions.swift */,
+				71E22BCE273831AF00A90FFD /* CounterDisplay.swift */,
+				71E384B7273736050055B227 /* Detail */,
+				711EEDA52736F9F700F32157 /* Master */,
+				71E384C2273745690055B227 /* Split */,
 			);
-			path = "Detail Screen";
+			path = Scenes;
 			sourceTree = "<group>";
 		};
-		72FBE4462151E0E5005216AF /* Model */ = {
+		711EEDA52736F9F700F32157 /* Master */ = {
 			isa = PBXGroup;
 			children = (
-				72FBE4472151E0F6005216AF /* MultiCounter.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		72FBE44D2151E5FE005216AF /* Master */ = {
-			isa = PBXGroup;
-			children = (
-				7207A1B5215118C400971B5E /* MasterTableViewController.swift */,
-				722CEFA021526FA80060AD1D /* MasterTableViewCell.swift */,
-				72FBE44E2151E611005216AF /* MasterViewActions.swift */,
+				711EEDA92736FA1C00F32157 /* MasterConnections.swift */,
+				711EEDA62736FA1C00F32157 /* MasterLogic.swift */,
+				711EEDA72736FA1C00F32157 /* MasterViewController.storyboard */,
+				711EEDA82736FA1C00F32157 /* MasterViewController.swift */,
 			);
 			path = Master;
 			sourceTree = "<group>";
 		};
-		9AF377425C6D62F1D89AC16D /* Pods */ = {
+		711EEDB2273706F200F32157 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				B115ECAA0B49024C70CAB073 /* Pods-RxMultiCounter.debug.xcconfig */,
-				1EFE1B9E2326BE02F316925A /* Pods-RxMultiCounter.release.xcconfig */,
+				711EEDB32737071400F32157 /* UISplitViewController+Rx.swift */,
 			);
-			name = Pods;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		9FB147F9CF8C5B034686C36B /* Frameworks */ = {
+		71E384B7273736050055B227 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				7F0B2A57E5E5FF4B14D23A4E /* Pods_RxMultiCounter.framework */,
+				71E384BA273736200055B227 /* DetailConnections.swift */,
+				71E384B8273736200055B227 /* DetailLogic.swift */,
+				71E384B9273736200055B227 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		71E384C2273745690055B227 /* Split */ = {
+			isa = PBXGroup;
+			children = (
+				711EEDAE273703DA00F32157 /* Split.swift */,
+			);
+			path = Split;
+			sourceTree = "<group>";
+		};
+		BC790056B2D69A3EFC484CFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33C56FDECA62540785840B42 /* Pods_RxMultiCounter.framework */,
+				58B2033E4856C56FC5B15155 /* Pods_RxMultiCounterTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,15 +193,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7207A19B215115D300971B5E /* RxMultiCounter */ = {
+		711EED702736F7F100F32157 /* RxMultiCounter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7207A1AE215115EC00971B5E /* Build configuration list for PBXNativeTarget "RxMultiCounter" */;
+			buildConfigurationList = 711EED9B2736F7F200F32157 /* Build configuration list for PBXNativeTarget "RxMultiCounter" */;
 			buildPhases = (
-				39DF4A341EFFB5A9BBE8A7FF /* [CP] Check Pods Manifest.lock */,
-				7207A198215115D300971B5E /* Sources */,
-				7207A199215115D300971B5E /* Frameworks */,
-				7207A19A215115D300971B5E /* Resources */,
-				747B189D54049089D33FF245 /* [CP] Embed Pods Frameworks */,
+				7F1B7A2FE06C8DB60E45ADAF /* [CP] Check Pods Manifest.lock */,
+				711EED6D2736F7F100F32157 /* Sources */,
+				711EED6E2736F7F100F32157 /* Frameworks */,
+				711EED6F2736F7F100F32157 /* Resources */,
+				0698223B64A9A336A80293DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,67 +209,141 @@
 			);
 			name = RxMultiCounter;
 			productName = RxMultiCounter;
-			productReference = 7207A19C215115D300971B5E /* RxMultiCounter.app */;
+			productReference = 711EED712736F7F100F32157 /* RxMultiCounter.app */;
 			productType = "com.apple.product-type.application";
+		};
+		711EED862736F7F200F32157 /* RxMultiCounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 711EED9E2736F7F200F32157 /* Build configuration list for PBXNativeTarget "RxMultiCounterTests" */;
+			buildPhases = (
+				613F93D669AE16A110A5D6EB /* [CP] Check Pods Manifest.lock */,
+				711EED832736F7F200F32157 /* Sources */,
+				711EED842736F7F200F32157 /* Frameworks */,
+				711EED852736F7F200F32157 /* Resources */,
+				813D1479FBFA97DE72B8C655 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				711EED892736F7F200F32157 /* PBXTargetDependency */,
+			);
+			name = RxMultiCounterTests;
+			productName = RxMultiCounterTests;
+			productReference = 711EED872736F7F200F32157 /* RxMultiCounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7207A194215115D100971B5E /* Project object */ = {
+		711EED692736F7F100F32157 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "Daniel Tartaglia";
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					7207A19B215115D300971B5E = {
-						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1020;
+					711EED702736F7F100F32157 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					711EED862736F7F200F32157 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 711EED702736F7F100F32157;
 					};
 				};
 			};
-			buildConfigurationList = 7207A197215115D100971B5E /* Build configuration list for PBXProject "RxMultiCounter" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 711EED6C2736F7F100F32157 /* Build configuration list for PBXProject "RxMultiCounter" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 7207A193215115D100971B5E;
-			productRefGroup = 7207A19D215115D300971B5E /* Products */;
+			mainGroup = 711EED682736F7F100F32157;
+			productRefGroup = 711EED722736F7F100F32157 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7207A19B215115D300971B5E /* RxMultiCounter */,
+				711EED702736F7F100F32157 /* RxMultiCounter */,
+				711EED862736F7F200F32157 /* RxMultiCounterTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7207A19A215115D300971B5E /* Resources */ = {
+		711EED6F2736F7F100F32157 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7207A1AA215115EC00971B5E /* LaunchScreen.storyboard in Resources */,
-				7207A1A7215115EC00971B5E /* Assets.xcassets in Resources */,
-				7207A1A5215115D500971B5E /* Main.storyboard in Resources */,
+				711EED812736F7F200F32157 /* LaunchScreen.storyboard in Resources */,
+				711EED7E2736F7F200F32157 /* Assets.xcassets in Resources */,
+				711EEDAB2736FA1C00F32157 /* MasterViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711EED852736F7F200F32157 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		39DF4A341EFFB5A9BBE8A7FF /* [CP] Check Pods Manifest.lock */ = {
+		0698223B64A9A336A80293DF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		613F93D669AE16A110A5D6EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxMultiCounterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F1B7A2FE06C8DB60E45ADAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RxMultiCounter-checkManifestLockResult.txt",
 			);
@@ -232,65 +352,66 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		747B189D54049089D33FF245 /* [CP] Embed Pods Frameworks */ = {
+		813D1479FBFA97DE72B8C655 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxMultiCounterTests/Pods-RxMultiCounterTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxMultiCounterTests/Pods-RxMultiCounterTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxMultiCounter/Pods-RxMultiCounter-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxMultiCounterTests/Pods-RxMultiCounterTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7207A198215115D300971B5E /* Sources */ = {
+		711EED6D2736F7F100F32157 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72FBE44F2151E611005216AF /* MasterViewActions.swift in Sources */,
-				72FBE43F2151D54D005216AF /* Coordinator.swift in Sources */,
-				7207A1B42151188800971B5E /* DetailViewController.swift in Sources */,
-				09A0CBB4215567D900691097 /* Store.swift in Sources */,
-				7207A1B6215118C400971B5E /* MasterTableViewController.swift in Sources */,
-				7244C8152153B3910088D087 /* RxSimpleAnimatableDataSource.swift in Sources */,
-				72FBE4412151DB52005216AF /* DetailViewActions.swift in Sources */,
-				7207A1A0215115D400971B5E /* AppDelegate.swift in Sources */,
-				722CEFA121526FA80060AD1D /* MasterTableViewCell.swift in Sources */,
-				72FBE4482151E0F6005216AF /* MultiCounter.swift in Sources */,
+				71E384BE273736200055B227 /* DetailConnections.swift in Sources */,
+				71E384BC273736200055B227 /* DetailLogic.swift in Sources */,
+				711EEDAA2736FA1C00F32157 /* MasterLogic.swift in Sources */,
+				711EEDB42737071400F32157 /* UISplitViewController+Rx.swift in Sources */,
+				711EEDAD2736FA1C00F32157 /* MasterConnections.swift in Sources */,
+				711EED752736F7F100F32157 /* AppDelegate.swift in Sources */,
+				711EEDAC2736FA1C00F32157 /* MasterViewController.swift in Sources */,
+				71E22BCF273831AF00A90FFD /* CounterDisplay.swift in Sources */,
+				711EEDAF273703DA00F32157 /* Split.swift in Sources */,
+				71E384BD273736200055B227 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711EED832736F7F200F32157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711EED8C2736F7F200F32157 /* RxMultiCounterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		7207A1A3215115D500971B5E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7207A1A4215115D500971B5E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		711EED892736F7F200F32157 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 711EED702736F7F100F32157 /* RxMultiCounter */;
+			targetProxy = 711EED882736F7F200F32157 /* PBXContainerItemProxy */;
 		};
-		7207A1A8215115EC00971B5E /* LaunchScreen.storyboard */ = {
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		711EED7F2736F7F200F32157 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7207A1A9215115EC00971B5E /* Base */,
+				711EED802736F7F200F32157 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -298,13 +419,13 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7207A1AC215115EC00971B5E /* Debug */ = {
+		711EED992736F7F200F32157 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -324,13 +445,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -349,8 +470,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -358,13 +480,13 @@
 			};
 			name = Debug;
 		};
-		7207A1AD215115EC00971B5E /* Release */ = {
+		711EED9A2736F7F200F32157 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -384,13 +506,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -403,8 +525,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -412,68 +535,141 @@
 			};
 			name = Release;
 		};
-		7207A1AF215115EC00971B5E /* Debug */ = {
+		711EED9C2736F7F200F32157 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B115ECAA0B49024C70CAB073 /* Pods-RxMultiCounter.debug.xcconfig */;
+			baseConfigurationReference = D1F2AD9EFAF611C93DBBFD7C /* Pods-RxMultiCounter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RxMultiCounter/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.danielt1263.RxMultiCounter;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.danielt1263.RxMultiCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		7207A1B0215115EC00971B5E /* Release */ = {
+		711EED9D2736F7F200F32157 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EFE1B9E2326BE02F316925A /* Pods-RxMultiCounter.release.xcconfig */;
+			baseConfigurationReference = FE69984960AD0D76B7F675D2 /* Pods-RxMultiCounter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RxMultiCounter/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.danielt1263.RxMultiCounter;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.danielt1263.RxMultiCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		711EED9F2736F7F200F32157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F926B3AB7E182D43BC44744B /* Pods-RxMultiCounterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.danielt1263.RxMultiCounterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxMultiCounter.app/RxMultiCounter";
+			};
+			name = Debug;
+		};
+		711EEDA02736F7F200F32157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4622861B6367872DFB1D0C22 /* Pods-RxMultiCounterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.danielt1263.RxMultiCounterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxMultiCounter.app/RxMultiCounter";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7207A197215115D100971B5E /* Build configuration list for PBXProject "RxMultiCounter" */ = {
+		711EED6C2736F7F100F32157 /* Build configuration list for PBXProject "RxMultiCounter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7207A1AC215115EC00971B5E /* Debug */,
-				7207A1AD215115EC00971B5E /* Release */,
+				711EED992736F7F200F32157 /* Debug */,
+				711EED9A2736F7F200F32157 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7207A1AE215115EC00971B5E /* Build configuration list for PBXNativeTarget "RxMultiCounter" */ = {
+		711EED9B2736F7F200F32157 /* Build configuration list for PBXNativeTarget "RxMultiCounter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7207A1AF215115EC00971B5E /* Debug */,
-				7207A1B0215115EC00971B5E /* Release */,
+				711EED9C2736F7F200F32157 /* Debug */,
+				711EED9D2736F7F200F32157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		711EED9E2736F7F200F32157 /* Build configuration list for PBXNativeTarget "RxMultiCounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711EED9F2736F7F200F32157 /* Debug */,
+				711EEDA02736F7F200F32157 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7207A194215115D100971B5E /* Project object */;
+	rootObject = 711EED692736F7F100F32157 /* Project object */;
 }
