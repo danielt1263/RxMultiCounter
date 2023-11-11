@@ -1,13 +1,13 @@
 PODS:
-  - Cause-Logic-Effect (3.2.0):
+  - Cause-Logic-Effect (6.1.1):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
   - Curry (5.0.0)
   - Differentiator (5.0.0)
   - EnumKit (1.1.3)
-  - RxCocoa (6.2.0):
-    - RxRelay (= 6.2.0)
-    - RxSwift (= 6.2.0)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
   - RxDataSources (5.0.0):
     - Differentiator (~> 5.0)
     - RxCocoa (~> 6.0)
@@ -15,11 +15,11 @@ PODS:
   - RxEnumKit (2.0.0):
     - EnumKit (~> 1.1)
     - RxCocoa (~> 6.0)
-  - RxRelay (6.2.0):
-    - RxSwift (= 6.2.0)
-  - RxSwift (6.2.0)
-  - RxTest (6.2.0):
-    - RxSwift (= 6.2.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+  - RxTest (6.6.0):
+    - RxSwift (= 6.6.0)
 
 DEPENDENCIES:
   - Cause-Logic-Effect
@@ -44,17 +44,17 @@ SPEC REPOS:
     - RxTest
 
 SPEC CHECKSUMS:
-  Cause-Logic-Effect: 31f6f9f878dbe10b6cc5969e7e1712c376ce5c95
+  Cause-Logic-Effect: a85450197db68b673dca4066518eac85f04cbef2
   Curry: 9807b3a3e5056d73c38c7eeb3cf846cd88cd3d2a
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   EnumKit: 9f25cf60cb53b029a2c396813f155877d9764a8f
-  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxEnumKit: b09f20969ee95beffdc14dfd355dd7118df6b787
-  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
-  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
-  RxTest: 0c692fa672b694373ba86d2b00033595297a2831
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  RxTest: a23f26bb53a5e146a0a69db4f0fa0b69001ce7f4
 
-PODFILE CHECKSUM: f450591f770c6fce58eae27f2922a268462500fc
+PODFILE CHECKSUM: 9cabe5969229d03e79ac8c057b2ea7213c6b1627
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.14.2

@@ -14,7 +14,7 @@ extension UISplitViewController {
 	func connect() {
 		let master = MasterViewController.create { $0.connect() }
 
-		preferredDisplayMode = .allVisible
+		preferredDisplayMode = .oneBesideSecondary
 		viewControllers = [
 			UINavigationController(rootViewController: master)
 		]
